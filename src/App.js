@@ -19,14 +19,21 @@ import ArrConcat2 from '../src/Components/SpreadOperater/Demo';
 import MouseEvent from '../src/Components/ClassMouse';
 import HookMouse from '../src/Components/HookCounter1/HookMouse';
 import MouseCounter from './Components/HookCounter1/MouseCounter';
-
 import TestingData from '../src/Components/Testing';
+import DataFetchingComp from './Components/DataFetching'
+import CompoC from './Components/Context/componentC';
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
-      <MouseCounter />
+      <UserContext.Provider value={"Vikash"}>
+        <ChannelContext.Provider value={"Code Evolution"}>
+          <CompoC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
