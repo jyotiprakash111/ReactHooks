@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import HookMouse from '../HookCounter1/HookMouse';
+import HookMouse from './HookMouse';
 
 function MouseCounter(props) {
     const [display, setDisplay] = useState(true);

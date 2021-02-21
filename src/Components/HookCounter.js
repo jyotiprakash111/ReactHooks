@@ -9,13 +9,13 @@ function HookCounter(props) {
         document.title = `You clicked ${count} times`
         console.log("Use Effect updating Docs")
         document.title = `You Clicked ${count} Times`
-    // },)
     }, [count])
     return (
         <Fragment>
             <div>
                 <input type="text" value={name} onChange={e => setName(e.target.value)} />
                 <button onClick={() => setCount(count + 1)}>Count {count}</button>
+                {/* <button onClick={() => setCount(count - 1)}>Count {count}</button> */}
                 <button onClick={() => setCount(initialCounter)}>Reset</button>
             </div>
         </Fragment>
