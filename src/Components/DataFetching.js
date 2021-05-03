@@ -3,6 +3,7 @@ import axios from 'axios';
 
 
 function DataFetching(props) {
+<<<<<<< HEAD
     const [posts, setPosts] = useState({});
     const [id, setId] = useState(1);
     const [idFromBtnClick, setIdfromBtnClick] = useState(1);
@@ -18,6 +19,21 @@ function DataFetching(props) {
     //             console.log(err)
     //         })
     // }, [id])
+=======
+    const [posts, setPosts] = useState([])
+
+    useEffect(() => {
+        axios.get('https://jsonplaceholder.typicode.com/posts')
+            .then(res => {
+                // alert(JSON.stringify(res))
+                // console.log(res)
+                setPosts(res.data)
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, [])
+>>>>>>> 155491cd2db02aec9d7e1f5093ac45a832298bc3
 
     const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
@@ -58,6 +74,7 @@ function DataFetching(props) {
         // expected output: Array ["broccoli", "cauliflower", "cabbage"]
     */}
 
+<<<<<<< HEAD
 //     return (
 //         <div>
 //             <input type="text" value={id} onChange={e => setId(e.target.value)}></input>
@@ -107,4 +124,17 @@ return (
     </div>
 );
 }
+=======
+    return (
+        <div>
+            <ul>
+                {
+                    posts.map(e => (<li key={e.id}>{e.title}</li>))
+                }
+            </ul>
+        </div>
+    );
+}
+
+>>>>>>> 155491cd2db02aec9d7e1f5093ac45a832298bc3
 export default DataFetching;
