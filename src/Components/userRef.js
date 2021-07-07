@@ -14,6 +14,8 @@ function UserRef(props) {
   const getTextBox = () => {
     console.log("World");
     console.log(inputTwo.current);
+    inputTwo.current.style.width = "400px";
+
   };
   return (
     <>

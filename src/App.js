@@ -14,24 +14,31 @@ import Counter2 from "./components/lifecycleCounter";
 import LifeCycle from "./components/lifecycleCounter/LifeCycleCounter1";
 import ArrConcat from "./components/spreadOperater";
 import ArrConcat2 from "./components/spreadOperater/Demo";
-
+import Fragment from './components/fragment'; 
 import MouseEvent from "./components/ClassMouse";
 import HookMouse from "./components/hookCounter1/HookMouse";
 import MouseCounter from "./components/hookCounter1/MouseCounter";
-import TestingData from "./components/testing";
+import TestingData from "./components/Testing";
 import DataFetchingComp from "./components/DataFetching";
-import CompoC from "./components/context/componentC";
+import CompoC from "./components/Context/componentC";
+import DropDown from "./components/dropDown";
 
+// Search 
+import CountrySearch from './components/searchBar/App';
+import Filtersearch from './components/filterSearch'
 // useReducer
 import ReducerCounter from "./components/userReducer/counterOne";
 import ReducerCounter2 from "./components/userReducer/countertwo";
 import PureCom from "./components/pureComponent/parentComp";
+import HOCComp from './components/Hoc/clickCounter';
+import HOCHoverCounter from './components/Hoc/hoverCounter';
 
 //
 import UseRef from "../src/components/userRef";
 
 // Material Ui
 import MaterialUiComp from "../src/MaterialUi/menu";
+import Grid from './MaterialUi/grid';
 
 import Icons from "../src/libraries/icon";
 import Toast from "../src/libraries/tostify";
@@ -44,25 +51,79 @@ import CreditCrad from "../src/libraries/creditCards";
 import DatePicker from "../src/libraries/datePicker";
 import Excel from "./libraries/excel";
 
+import HookForm from "./components/hookForm";
+
+// Fnctional Redux & Hooks
+import AppReduxHooks from "./components/redux-Hooks/App";
+import { Provider } from "react-redux";
+import store from './components/redux-Hooks2/store';
+import {useSelector, useDispatch} from 'react-redux'
+import {bindActionCreators} from 'redux';
+import {actionCreators} from './components/redux-Hooks2/index'
+
+// Functional Redux & Reducer setup
+import ReduxFunctional from "./reduxFunctional/App";
+// import { store } from "./components/redux-Hooks/redux";
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
 // PureCompo
 
+// function App() {
+//   return (
+//     <Provider store={store}>
+//       <div className='App'>
+//         {/* <UserContext.Provider value={"Vikash"}>
+//         <ChannelContext.Provider value={"Code Evolution"}>
+//           <CompoC />
+//         </ChannelContext.Provider>
+//       </UserContext.Provider> */}
+
+//         {/* <PureCom /> */}
+//         {/* <DatePicker /> */}
+//         {/* <UseRef /> */}
+//         {/* <MaterialUiComp /> */}
+//         {/* <Excel /> */}
+//         {/* <ReduxFunctional /> */}
+//         {/* <HookForm /> */}
+//         {/* <AppReduxHooks /> */}
+//         {/* <CountrySearch /> */}
+//         <Filtersearch />
+//       </div>
+//     </Provider>
+//   );
+// }
 function App() {
+  // const account = useSelector((state)=> state.account);
+  // const dispatch = useDispatch();
+  // const AC = bindActionCreators(actionCreators, dispatch);
+  // console.log(AC);
+
+  // console.log("state:",account)
   return (
-    <div className='App'>
-      {/* <UserContext.Provider value={"Vikash"}>
+    <Provider store={store}>
+      <div className='App'>
+        {/* <UserContext.Provider value={"Vikash"}>
         <ChannelContext.Provider value={"Code Evolution"}>
           <CompoC />
         </ChannelContext.Provider>
       </UserContext.Provider> */}
 
-      {/* <PureCom /> */}
-      {/* <DatePicker /> */}
-      {/* <UseRef /> */}
-      {/* <MaterialUiComp /> */}
-      <Excel />
-    </div>
+        {/* <PureCom /> */}
+        <HOCComp name="Bikash"/>
+        {/* <HOCHoverCounter /> */}
+        <Grid />
+        {/* <DatePicker /> */}
+        {/* <UseRef /> */}
+        {/* <Fragment /> */}
+        {/* <MaterialUiComp /> */}
+        {/* <Excel /> */}
+        {/* <ReduxFunctional /> */}
+        {/* <HookForm /> */}
+        {/* <AppReduxHooks /> */}
+        {/* <CountrySearch /> */}
+        {/* <Filtersearch /> */}
+      </div>
+    </Provider>
   );
 }
 

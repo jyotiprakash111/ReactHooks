@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 class RegularComponent extends Component {
   render() {
-    return <div> textInComponent {this.props.name}</div>;
+    console.log('Regular Comp')
+    return <div> Rgular Component {this.props.name}</div>;
   }
 }
 

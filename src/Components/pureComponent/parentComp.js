@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PureComponent from "./pureComp";
 import RegularComponent from "./regularComp";
+import MemoComp from '../memo/MemoComp'
 
 class PrentComp extends Component {
   constructor(props) {
@@ -20,12 +21,13 @@ class PrentComp extends Component {
   }
 
   render() {
+    console.log('******Parent Comp*******')
     return (
       <div>
-        {" "}
-        textInComponent
-        <RegularComponent name={this.state.name}></RegularComponent>
-        <PureComponent name={this.state.name}></PureComponent>
+        Parent Component
+        {/* <RegularComponent name={this.state.name}></RegularComponent> */}
+        {/* <PureComponent name={this.state.name}></PureComponent> */}
+        <MemoComp name={this.state.name} />
       </div>
     );
   }
