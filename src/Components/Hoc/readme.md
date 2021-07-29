@@ -1,5 +1,5 @@
 Higher order components - HOC
- pttern where a function takes a component as an argument n returns new component
+ pattern where a function takes a component as an argument nd returns new component
 
  Ex:- const newComponent = higherOrerComponent(OriginalComponent)
 

@@ -35,10 +35,20 @@ import HOCHoverCounter from './components/Hoc/hoverCounter';
 
 //
 import UseRef from "../src/components/userRef";
+import RefDemo from '../src/components/refs/refsDemo';
 
 // Material Ui
 import MaterialUiComp from "../src/MaterialUi/menu";
 import Grid from './MaterialUi/grid';
+import LoginForm from './MaterialUi/login';
+
+// Social Logins
+import FbLogin from  './components/socialLogins/facebook';
+import GoogleLogin from  './components/socialLogins/google';
+
+// Hooks example
+import HookState from '../src/components/hooks/useStateHook';
+
 
 import Icons from "../src/libraries/icon";
 import Toast from "../src/libraries/tostify";
@@ -50,7 +60,7 @@ import ColorPicker from "../src/libraries/colorPicker";
 import CreditCrad from "../src/libraries/creditCards";
 import DatePicker from "../src/libraries/datePicker";
 import Excel from "./libraries/excel";
-
+import Demo22 from '../src/components/Demo2'
 import HookForm from "./components/hookForm";
 
 // Fnctional Redux & Hooks
@@ -111,7 +121,13 @@ function App() {
         {/* <PureCom /> */}
         <HOCComp name="Bikash"/>
         {/* <HOCHoverCounter /> */}
-        <Grid />
+        {/* <Demo22 /> */}
+        <RefDemo />
+        <HookState />
+        {/* <Grid /> */}
+        {/* <LoginForm /> */}
+        {/* <FbLogin /> */}
+        {/* <GoogleLogin/> */}
         {/* <DatePicker /> */}
         {/* <UseRef /> */}
         {/* <Fragment /> */}
