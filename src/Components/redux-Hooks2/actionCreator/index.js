@@ -5,9 +5,7 @@ export const depositMoney = (amount) => {
         payload: amount
       });
     };
-  };
-  export default depositMoney;
-  
+  };  
   export const drawMoney = (amount) => {
     return (dispatch) => {
       dispatch({

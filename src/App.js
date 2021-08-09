@@ -65,11 +65,11 @@ import HookForm from "./components/hookForm";
 
 // Fnctional Redux & Hooks
 import AppReduxHooks from "./components/redux-Hooks/App";
-import { Provider } from "react-redux";
 import store from './components/redux-Hooks2/store';
-import {useSelector, useDispatch} from 'react-redux'
-import {bindActionCreators} from 'redux';
-import {actionCreators} from './components/redux-Hooks2/index'
+import { Provider } from "react-redux";
+// import {useSelector, useDispatch} from 'react-redux'
+// import {bindActionCreators} from 'redux';
+// import {actionCreators} from './components/redux-Hooks2/index'
 
 // Functional Redux & Reducer setup
 import ReduxFunctional from "./reduxFunctional/App";
@@ -119,11 +119,11 @@ function App() {
       </UserContext.Provider> */}
 
         {/* <PureCom /> */}
-        <HOCComp name="Bikash"/>
+        {/* <HOCComp name="Bikash"/> */}
         {/* <HOCHoverCounter /> */}
-        {/* <Demo22 /> */}
-        <RefDemo />
-        <HookState />
+        <Demo22 />
+        {/* <RefDemo /> */}
+        {/* <HookState /> */}
         {/* <Grid /> */}
         {/* <LoginForm /> */}
         {/* <FbLogin /> */}

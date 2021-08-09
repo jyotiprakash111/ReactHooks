@@ -36,7 +36,7 @@ console.log(printMyname);
 printMyname();
 
 // bind and call is a method which created a copy and can be onvoked later.
-// call - which invokes the method directly
+// apply - which invokes the method directly
 
 let name2 ={
     firstname:"sachin",

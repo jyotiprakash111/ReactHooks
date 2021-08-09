@@ -21,3 +21,19 @@ function  Example() {
     )
 }
 export default Example;
+
+
+
+
+
+
+
+
+
+// Middlewares will let you write an action dispatcher which returns a function instead of an action object. Example for the same is shown below −
+
+// function getUser() {
+//    return function() {
+//       return axios.get('/get_user_details');
+//    };
+// }
