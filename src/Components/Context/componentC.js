@@ -3,7 +3,7 @@
 import ComponentE from './componentE'
 import React from 'react';
 
-function componentc() {
+function Componentc() {
     return (
         <div>
             <ComponentE/>
@@ -11,4 +11,4 @@ function componentc() {
     );
 }
 
-export default componentc;
+export default Componentc;

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function HooksCounter2(props) {
     const initialCounterTwo = 0
     const [count, setcount] = useState(initialCounterTwo)
+    const [discount, setDiscount] = useState(0)
 
     var incrementFive = () => {
         for (let i = 0; i < 5; i++) {
@@ -49,6 +50,8 @@ function HooksCounter2(props) {
             Total Count: {count}
             <div style={{ paddingLeft: "10px" }}>
                 <button onClick={() => setcount(initialCounterTwo)}>reset</button>
+                {/* <input style={{ marginLeft: "2px" }} value={count} onChange={() => setcount(count)}></input> */}
+                <input style={{ marginLeft: "2px" }} placeholder="0" value={discount} onChange={() => setcount(setDiscount )}></input>
                 <button style={{ marginLeft: "2px" }} onClick={() => setcount(count + 1)}>Increment</button>
                 <button style={{ marginLeft: "2px" }} onClick={() => setcount(count - 1)}>Decrement</button>
                 <button style={{ marginLeft: "2px" }} onClick={incrementFive}>Increment Five 5</button>

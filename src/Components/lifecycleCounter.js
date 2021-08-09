@@ -42,3 +42,7 @@ export default class componentName extends Component {
         );
     }
 }
+
+// onChange
+
+// check if current value if zero ?
