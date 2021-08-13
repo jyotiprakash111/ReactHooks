@@ -18,9 +18,3 @@ export default class ComponentName extends Component {
         );
     }
 }
-<<<<<<< HEAD
-
-
-// Testing Component
-=======
->>>>>>> 155491cd2db02aec9d7e1f5093ac45a832298bc3

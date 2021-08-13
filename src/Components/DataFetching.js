@@ -3,23 +3,6 @@ import axios from 'axios';
 
 
 function DataFetching(props) {
-<<<<<<< HEAD
-    const [posts, setPosts] = useState({});
-    const [id, setId] = useState(1);
-    const [idFromBtnClick, setIdfromBtnClick] = useState(1);
-
-    // useEffect(() => {
-    //     axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-    //         .then(res => {
-    //             // alert(JSON.stringify(res))
-    //             console.log(res)
-    //             setPosts(res.data)
-    //         })
-    //         .catch(err => {
-    //             console.log(err)
-    //         })
-    // }, [id])
-=======
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
@@ -33,7 +16,6 @@ function DataFetching(props) {
                 console.log(err)
             })
     }, [])
->>>>>>> 155491cd2db02aec9d7e1f5093ac45a832298bc3
 
     const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
@@ -74,57 +56,6 @@ function DataFetching(props) {
         // expected output: Array ["broccoli", "cauliflower", "cabbage"]
     */}
 
-<<<<<<< HEAD
-//     return (
-//         <div>
-//             <input type="text" value={id} onChange={e => setId(e.target.value)}></input>
-//             <div>{posts.title}</div>
-//             {/* <ul>
-//                 {
-//                     posts.map(e => (<li key={e.id}>{e.title}</li>))
-//                 }
-//             </ul> */}
-//         </div>
-//     );
-// }
-
-
-// get data by a particular id Example
-
-// Get data By Pressing the Btn
-
-
-const handleClick = () =>{
-    setIdfromBtnClick(id)
-}
-
-useEffect(() => {
-    axios.get(`https://jsonplaceholder.typicode.com/posts/${idFromBtnClick}`)
-        .then(res => {
-            // alert(JSON.stringify(res))
-            console.log(res)
-            setPosts(res.data)
-        })
-        .catch(err => {
-            console.log(err)
-        })
-}, [idFromBtnClick])
-
-
-return (
-    <div>
-        <input type="text" value={id} onChange={e => setId(e.target.value)}></input>
-        <button type="button" onClick={handleClick}>Fetch Post</button>
-        <div>{posts.title}</div>
-        {/* <ul>
-            {
-                posts.map(e => (<li key={e.id}>{e.title}</li>))
-            }
-        </ul> */}
-    </div>
-);
-}
-=======
     return (
         <div>
             <ul>
@@ -136,5 +67,4 @@ return (
     );
 }
 
->>>>>>> 155491cd2db02aec9d7e1f5093ac45a832298bc3
 export default DataFetching;
