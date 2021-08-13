@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 var a = 21;
 
 var b = function () {
-    console.log(a);
+    // console.log(a);
     var a = 20;
 }
 b();

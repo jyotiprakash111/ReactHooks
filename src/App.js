@@ -62,6 +62,8 @@ import DatePicker from "../src/libraries/datePicker";
 import Excel from "./libraries/excel";
 import Demo22 from '../src/components/Demo2'
 import HookForm from "./components/hookForm";
+import CallApply from './components/call_apply_bind/index2';
+
 
 // Fnctional Redux & Hooks
 import AppReduxHooks from "./components/redux-Hooks/App";
@@ -121,7 +123,8 @@ function App() {
         {/* <PureCom /> */}
         {/* <HOCComp name="Bikash"/> */}
         {/* <HOCHoverCounter /> */}
-        <Demo22 />
+        {/* <Demo22 /> */}
+        <CallApply />
         {/* <RefDemo /> */}
         {/* <HookState /> */}
         {/* <Grid /> */}
