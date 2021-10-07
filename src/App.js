@@ -64,6 +64,9 @@ import Demo22 from '../src/components/Demo2'
 import HookForm from "./components/hookForm";
 import CallApply from './components/call_apply_bind/index2';
 
+import AllHooks from '../src/components/All_Hooks'
+// import UseReducerHook from 'components/All_Hooks/useReducerHook';
+import UseReducerHook from 'components/All_Hooks/useReducerHook';
 
 // Fnctional Redux & Hooks
 import AppReduxHooks from "./components/redux-Hooks/App";
@@ -124,7 +127,9 @@ function App() {
         {/* <HOCComp name="Bikash"/> */}
         {/* <HOCHoverCounter /> */}
         {/* <Demo22 /> */}
-        <CallApply />
+        {/* <CallApply /> */}
+        {/* <AllHooks/> */}
+        <UseReducerHook/>
         {/* <RefDemo /> */}
         {/* <HookState /> */}
         {/* <Grid /> */}

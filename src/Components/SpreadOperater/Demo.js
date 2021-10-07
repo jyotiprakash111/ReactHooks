@@ -19,5 +19,3 @@ function Demo() {
 }
 
 export default Demo;
-
-// demo push
